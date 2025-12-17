@@ -12,7 +12,7 @@ header {
     align-items: center;
     justify-content: center;
     min-height: var(--header-min-height);
-    background-image: url('img/background-header.jpg');
+    background-image: url('/img/background-header.jpg');
     background-size: cover;
     padding: var(--space-4) 0;
     

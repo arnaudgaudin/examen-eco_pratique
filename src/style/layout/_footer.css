@@ -11,6 +11,7 @@ footer {
   .title {
     margin-bottom: var(--space-1);
     text-transform: uppercase;
+    font-size: var(--fs-de);
     font-weight: var(--fw-light);
     color: #fff;
   }

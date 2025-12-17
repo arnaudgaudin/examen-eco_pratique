@@ -2,6 +2,7 @@
 @import "./style/_variables.css";
 @import "./style/_utilities.css";
 @import "./style/_elements.css";
+@import "./style/_form.css";
 
 /* import alls layouts elements */
 @import "./style/layout/_header.css";

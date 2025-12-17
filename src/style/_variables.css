@@ -55,9 +55,12 @@
   --transition-base: all var(--transition-duration) var(--transition-timing-function);
 
   /* grossissement polices en desktop */
-  @media (min-width: 960px) {
+  @media (min-width: 768px) {
+    --fs-de: 1rem;
     --fs-lg: 1.75rem;
+    --fs-xl: 2.25rem;
     --fs-sm: 0.875rem;
+    --fs-xs: 0.75rem;
   }
 
   /* variables de sections */
