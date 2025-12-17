@@ -1,4 +1,9 @@
 .section-parallax {
+  /* fond ajouté donc pas besoin d'espacement avant ET après */
+  &, & + [class*="section-"] {
+    --sections-margin-top: 0;
+  }
+  
   --section-parallax-min-height: 25vw;
 
   min-height: var(--section-parallax-min-height);

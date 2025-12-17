@@ -12,6 +12,7 @@ footer {
     margin-bottom: var(--space-1);
     text-transform: uppercase;
     font-weight: var(--fw-light);
+    color: #fff;
   }
 
   nav {

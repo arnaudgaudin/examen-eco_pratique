@@ -8,15 +8,17 @@
 @import "./style/layout/_footer.css";
 @import "./style/layout/_section-hero.css";
 @import "./style/layout/_section-parallax.css";
+@import "./style/layout/_section-services.css";
 
 /* zone de contenu */
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sections-sep-gap);
 }
 
 [class*="section-"] {
   padding-top: var(--sections-p-y);
   padding-bottom: var(--sections-p-y);
+
+  & + [class*="section-"] {
+    margin-top: var(--sections-margin-top);
+  }
 }
