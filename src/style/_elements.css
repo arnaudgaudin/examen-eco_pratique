@@ -26,9 +26,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--fw-bold);
   line-height: var(--lh-sm);
   margin: 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  font-weight: var(--fw-light);
+}
+
+h4, h5, h6 {
+  color: var(--text-color);
+  font-weight: var(--fw-bold);
 }
 
 p {
@@ -48,14 +57,11 @@ a {
 
 /* le fameux owl selector (uniquement dans les zone de texte pour pas foutre le bordel */
 /* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
-section,
 .text {
   > * + * {
     margin-top: var(--space-3);
   }
-}
 
-.text {
   h1, h2, h3, h4, h5, h6 {
     & + * {
       margin-top: var(--space-2);

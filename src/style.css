@@ -6,7 +6,17 @@
 /* import alls layouts elements */
 @import "./style/layout/_header.css";
 @import "./style/layout/_footer.css";
+@import "./style/layout/_section-hero.css";
+@import "./style/layout/_section-parallax.css";
 
-body {
-  
+/* zone de contenu */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sections-sep-gap);
+}
+
+[class*="section-"] {
+  padding-top: var(--sections-p-y);
+  padding-bottom: var(--sections-p-y);
 }

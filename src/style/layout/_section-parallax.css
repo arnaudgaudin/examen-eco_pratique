@@ -1,0 +1,21 @@
+.section-parallax {
+  --section-parallax-min-height: 25vw;
+
+  min-height: var(--section-parallax-min-height);
+  background-color: var(--secondary);
+  background-image: url('img/tree.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media (min-width: 768px) {
+    --section-parallax-min-height: 30vw;
+  }
+
+  @media (min-width: 1200px) {
+    --section-parallax-min-height: 25vw;
+  }
+
+  @media (min-width: 1400px) {
+    --section-parallax-min-height: 20vw;
+  }
+}
