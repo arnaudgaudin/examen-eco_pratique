@@ -2,8 +2,10 @@
 header {
   position: relative;
   --header-min-height: none;
+  --header-bg-position: center top;
+  --header-bg-size: 200%;
   --navbar-min-height: 2.5rem;
-  --logo-height: 48px;
+  --logo-height: 72px;
   
   background-color: var(--primary);
   
@@ -13,7 +15,8 @@ header {
     justify-content: center;
     min-height: var(--header-min-height);
     background-image: url('/img/background-header.jpg');
-    background-size: cover;
+    background-position: var(--header-bg-position);
+    background-size: var(--header-bg-size);
     padding: var(--space-4) 0;
     
     .logo {
@@ -147,21 +150,23 @@ header {
     }
   }
 
+  @media (min-width: 576px) {
+    --header-bg-size: 125%;
+  }
+
   @media (min-width: 768px) {
     --header-min-height: 25vw;
-    --logo-height: 72px;
+    --logo-height: 96px;
+    --header-bg-size: cover;
+    --header-bg-position: center center;
   }
 
   @media (min-width: 992px) {
     --header-min-height: 30vw;
-    --logo-height: 96px;
-  }
-
-  @media (min-width: 1200px) {
     --logo-height: 144px;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
     --logo-height: 168px;
   }
 }
