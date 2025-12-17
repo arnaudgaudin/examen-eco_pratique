@@ -1,0 +1,62 @@
+:root {
+  /* theme de couleurs */
+  --primary-hsl: 141 69% 24%;      /*#136731*/
+  --primary-light-hsl: 141 49% 44%;
+  --primary-dark-hsl: 141 59% 14%;
+
+  --secondary-hsl: 75 100% 30%;    /*#709700*/
+  --secondary-light-hsl: 75 80% 50%;
+  --secondary-dark-hsl: 75 90% 20%;
+
+  /* raccourcis pour accès direct */
+  --primary: hsl(var(--primary-hsl));
+  --primary-dark: hsl(var(--primary-dark-hsl));
+  --primary-light: hsl(var(--primary-light-hsl));
+  --secondary: hsl(var(--secondary-hsl));
+  --secondary-dark: hsl(var(--secondary-light-hsl));
+  --secondary-light: hsl(var(--secondary-light-hsl));
+  
+  --text-color: #3e3e3e;
+  --bg-color: #fefefe;
+  --error-color: #FF6B6B;
+
+  --header-height: 80px;
+  
+  --ff-sans: 'Raleway', Helvetica, Arial, sans-serif;
+
+  --fs-de: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 2rem;
+  --fs-sm: 0.75rem;
+  --fs-xs: 0.65rem;
+  --lh-de: 1.5;
+  --lh-sm: 1.4;
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+
+  /* définition des marges */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: 1rem;
+  --space-4 : 2rem;
+
+  /* définition des rayons de bordure */
+  --border-radiu-de: .5rem;
+  --border-radiu-lg: 1rem;
+
+  /* gestion transition par défaut */
+  --transition-duration: 300ms;
+  --transition-timing-function: ease-out;
+  --transition-base: all var(--transition-duration) var(--transition-timing-function);
+
+  /* grossissement polices en desktop */
+  @media (min-width: 960px) {
+    --fs-lg: 1.75rem;
+    --fs-sm: 0.875rem;
+  }
+
+  /* variables de sections */
+  --sections-sep-gap: var(--space-4);
+  --sections-p-y: var(--sections-sep-gap);
+}

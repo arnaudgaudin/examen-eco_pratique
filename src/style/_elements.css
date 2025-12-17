@@ -1,0 +1,61 @@
+:root {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-de);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-de);
+
+  /* color-scheme: light dark; */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-sm);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition-base);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+/* le fameux owl selector (uniquement dans les zone de texte pour pas foutre le bordel */
+/* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
+section,
+.text {
+  > * + * {
+    margin-top: var(--space-3);
+  }
+}
+
+.text {
+  h1, h2, h3, h4, h5, h6 {
+    & + * {
+      margin-top: var(--space-2);
+    }
+  }
+  
+  li + li {
+    margin-top: 0;
+  }
+}
