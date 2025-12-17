@@ -1,7 +1,7 @@
 ## Examen Eco Pratique - 20251217
 
 J'ai utilisé Vite pour ce projet.
-Pour lancer le projet en local en mode Dev (prérequis : avoir Node installé sur ton Mac) :
+Pour lancer le projet en local en mode Dev (prérequis&nbsp;: avoir Node installé sur ton Mac)&nbsp;:
 
 ```sh
 npm install
