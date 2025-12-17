@@ -74,12 +74,10 @@ header {
             justify-content: center;
             gap: var(--space-2);
             padding: var(--space-1) var(--space-2);
-          
-          
+            
             font-size: var(--fs-sm);
             color: #fff;
             text-decoration: none;
-            border-radius: var(--border-radiu-de);
             transition: background-color 0.2s, color 0.2s;
             white-space: nowrap;
           
@@ -117,22 +115,28 @@ header {
 
     /* Bouton hamburger */
     .menu-toggle {
+      --btn-size: 1.5rem;
+
       position: absolute;
-      right: 0;
-      display: flex;
-      align-items: center;
-      padding: var(--space-2) 0;
+      right: var(--container-p-x);
+      top: var(--space-2);
 
       &-btn {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: none;
         border: none;
         color: #fff;
         cursor: pointer;
+        transition: var(--transition-base);
+        width: var(--btn-size);
+        height: var(--btn-size);
 
         &:hover,
         &:focus {
-          color: var(--secondary);
+          background-color: var(--secondary);
+          color: #fff;
         }
       }
       

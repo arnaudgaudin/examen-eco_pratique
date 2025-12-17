@@ -60,3 +60,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+article, section {
+  > * + * {
+    margin-top: var(--space-3);
+  }
+}
