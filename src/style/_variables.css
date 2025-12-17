@@ -41,6 +41,9 @@
   --space-3: 1rem;
   --space-4 : 2rem;
 
+  /* padding horizontal du container */
+  --container-p-x: var(--space-3);
+
   /* définition des rayons de bordure */
   --border-radiu-de: .5rem;
   --border-radiu-lg: 1rem;
