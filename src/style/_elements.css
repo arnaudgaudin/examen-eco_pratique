@@ -54,3 +54,9 @@ a {
     text-decoration: underline;
   }
 }
+
+/* responsive image by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
