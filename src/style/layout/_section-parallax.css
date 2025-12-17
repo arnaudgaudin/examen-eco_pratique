@@ -8,7 +8,7 @@
 
   min-height: var(--section-parallax-min-height);
   background-color: var(--secondary);
-  background-image: url('img/tree.jpg');
+  background-image: url('/img/tree.jpg');
   background-size: cover;
   background-attachment: fixed;
 
