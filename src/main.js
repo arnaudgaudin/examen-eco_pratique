@@ -15,11 +15,17 @@ Fancybox.bind("[data-fancybox]", {});
 //au chargement du DOM
 document.addEventListener("DOMContentLoaded", () => {
 
-  //gestion des liens actifs dans les menus
+  // Gestion des liens actifs dans les menus
   const currentPath = window.location.pathname;
-  // Sélectionne tous les liens de navigation correspondant au chemin actuel
-  const links = Array.from(document.querySelectorAll("nav a")).filter(link => link.getAttribute("href") === currentPath);
-  links.forEach(link => link.classList.add("active"));
+
+  document.querySelectorAll("nav a").forEach(link => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
 
   //gestion du menu responsive
   const menuToggle = document.querySelector(".menu-toggle .menu-toggle-btn");

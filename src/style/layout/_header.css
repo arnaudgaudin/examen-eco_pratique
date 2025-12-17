@@ -82,6 +82,7 @@ header {
             white-space: nowrap;
           
             &.active {
+              background-color: hsl(var(--primary-dark-hsl) / 0.5);
             }
 
             &:hover,
