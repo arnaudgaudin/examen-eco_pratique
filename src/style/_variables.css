@@ -34,6 +34,7 @@
 
   --fw-normal: 500;
   --fw-bold: 700;
+  --fw-light: 300;
 
   /* définition des marges */
   --space-1: .25rem;

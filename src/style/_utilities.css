@@ -23,3 +23,19 @@
     width: 1320px;
   }
 }
+
+
+/* gestion row avec sidebar */
+.row {
+  display: flex;
+  gap: var(--space-4);
+
+  aside {
+    flex: 1;
+
+    & + * {
+      order: -1;
+      flex: 2 0;
+    }
+  }
+}
